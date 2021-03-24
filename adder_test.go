@@ -11,9 +11,9 @@ func TestAdderPass(t *testing.T) {
 	}
 }
 
-func TestAdderFail(t *testing.T) {
+func TestAdderFailtoPass(t *testing.T) {
 	sum := Add(2, 3)
-	expected := 4
+	expected := 5
 
 	if sum != expected {
 		t.Errorf("expected '%d' but got '%d'", expected, sum)
